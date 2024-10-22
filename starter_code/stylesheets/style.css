@@ -15,6 +15,7 @@ footer links grey: #454245
   --blue: #4285f4;
   --ivory: #f3eae2;
   --grey: #454245;
+  --linkBlue: #2e71a6;
 }
 
 * {
@@ -71,6 +72,8 @@ nav {
   display: none;
 }
 
+/*hero section */
+
 #hero {
   background-color: var(--purple);
 }
@@ -98,27 +101,25 @@ nav {
   flex-direction: column;
 }
 
-#sign-up-with-mail {
+#sign-up-button-container button {
   text-transform: uppercase;
-  font-size: 1em;
-  color: var(--purple);
   font-weight: bold;
+
   height: 50px;
   border: none;
   border-radius: 2px;
   margin: 10px;
 }
 
+#sign-up-with-mail {
+  font-size: 1em;
+  color: var(--purple);
+}
+
 #sign-up-with-google {
-  text-transform: uppercase;
   font-size: 1em;
   color: white;
-  font-weight: bold;
   background-color: var(--blue);
-  height: 50px;
-  border: none;
-  border-radius: 2px;
-  margin: 10px;
 
   display: flex;
   justify-content: space-between;
@@ -148,6 +149,44 @@ nav {
   width: 150%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #hero {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+
+  #hero-content {
+    padding-left: 3rem;
+    padding-right: 8rem;
+
+    background-image: url("../images/background-singup.png");
+    background-size: 140vw;
+    background-repeat: no-repeat;
+  }
+
+  #hero-content h1 {
+    font-size: 4rem;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  #hero-content p {
+    text-align: left;
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
+  #sign-up-button-container button {
+    margin-left: 0;
+  }
+
+  #hero-image-container img {
+    width: 60vw;
+  }
+}
+
+/* Partner section */
 #partner-logos {
   background-color: var(--ivory);
   padding: 40px 0;
@@ -170,6 +209,9 @@ nav {
   height: 40px;
   padding: 10px 5px;
 }
+
+/* statistics section */
+
 #statistics {
   padding: 40px 0;
 }
@@ -186,6 +228,7 @@ nav {
 #statistics ul {
   display: flex;
   flex-direction: column;
+  list-style: none;
 }
 
 #statistics li {
@@ -204,7 +247,35 @@ nav {
   font-weight: bold;
   padding: 0 120px;
   width: 40%;
+  margin: 0 auto;
 }
+
+@media screen and (min-width: 768px) {
+  #statistics ul {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+
+  #statistics li {
+    width: 33.3vw;
+  }
+
+  #statistics li span {
+    text-align: left;
+  }
+
+  #statistics li p {
+    text-align: left;
+  }
+
+  #statistics li p:last-child {
+    padding: 0;
+    width: 70%;
+    text-align: left;
+    margin: 0;
+  }
+}
+/* cta section  */
 
 #cta {
   background-color: var(--purple);
@@ -239,6 +310,14 @@ nav {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  #cta button {
+    margin: 5px 100px;
+  }
+}
+
+/* footer */
+
 footer hr {
   margin: 40px 20px 20px 20px;
 }
@@ -259,6 +338,10 @@ footer hr {
   padding-right: 10px;
 }
 
+#quick-links li:last-of-type {
+  color: var(--linkBlue);
+}
+
 #social-media {
   display: flex;
   justify-content: space-between;
@@ -277,4 +360,14 @@ footer hr {
   text-align: center;
   color: var(--grey);
   padding: 0 30px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #quick-links {
+    flex-direction: row;
+  }
+
+  #social-media {
+    width: 35%;
+  }
 }
