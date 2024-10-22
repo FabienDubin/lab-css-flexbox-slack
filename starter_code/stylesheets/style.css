@@ -382,6 +382,11 @@ nav {
   padding: 20px 40px;
 }
 
+#cta div {
+  display: flex;
+  flex-direction: column;
+}
+
 #cta button {
   text-align: center;
   text-transform: uppercase;
@@ -406,6 +411,18 @@ nav {
   #cta button {
     margin: 5px 100px;
   }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #cta div {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #cta button {
+    margin: 5px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* footer */
