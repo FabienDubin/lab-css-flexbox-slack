@@ -23,12 +23,6 @@ footer links grey: #454245
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
-}
-
 h3 {
   font-weight: bold;
   text-align: center;
@@ -101,7 +95,7 @@ nav {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) {
   .navbar ul {
     display: flex;
     justify-content: space-evenly;
@@ -237,7 +231,7 @@ nav {
     width: 60vw;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) {
   #hero {
     display: flex;
     align-items: center;
@@ -273,6 +267,37 @@ nav {
     width: 100%;
     overflow-y: unset;
     height: 40vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #hero-content {
+    margin-right: 0;
+    margin-left: 5rem;
+    padding-right: 0;
+    background-image: none;
+  }
+
+  #hero-content h1 {
+    margin-bottom: 10rem;
+  }
+  #sign-up-button-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #sign-up-button-container button {
+    width: 49%;
+    margin: 0;
+  }
+
+  #hero-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-image {
+    width: 60%;
   }
 }
 /* Partner section */
@@ -413,7 +438,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) {
   #cta div {
     flex-direction: row;
     justify-content: center;
@@ -423,6 +448,7 @@ nav {
     margin: 5px 10px;
     padding-left: 20px;
     padding-right: 20px;
+  }
 }
 
 /* footer */
