@@ -35,6 +35,10 @@ h3 {
   font-size: 1.7em;
 }
 
+a {
+  color: white;
+}
+
 body {
   font-family: "Helvetica", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -67,11 +71,59 @@ nav {
 .navbar img {
   width: 100px;
 }
+#navbar-cta-buttons {
+  display: none;
+}
 
 .navbar ul {
   display: none;
 }
 
+#navbar-cta-buttons {
+  list-style: none;
+}
+#navbar-cta-buttons li a {
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.white-button.try-for-free {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.white-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: white;
+  color: var(--purple);
+  border: none;
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    list-style: none;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  #hamburger-button {
+    display: none;
+  }
+
+  #navbar-cta-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 /*hero section */
 
 #hero {
@@ -185,7 +237,44 @@ nav {
     width: 60vw;
   }
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  #hero {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
 
+  #hero-content {
+    padding-left: 3rem;
+    padding-right: 8rem;
+
+    background-image: url("../images/background-singup.png");
+    background-size: 140vw;
+    background-repeat: no-repeat;
+  }
+
+  #hero-content h1 {
+    font-size: 4rem;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  #hero-content p {
+    text-align: left;
+    margin-left: 0;
+    font-size: 1.4rem;
+  }
+
+  #sign-up-button-container button {
+    margin-left: 0;
+  }
+
+  #hero-image-container {
+    width: 100%;
+    overflow-y: unset;
+    height: 40vw;
+  }
+}
 /* Partner section */
 #partner-logos {
   background-color: var(--ivory);
@@ -274,6 +363,9 @@ nav {
     text-align: left;
     margin: 0;
   }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
 }
 /* cta section  */
 
